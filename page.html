@@ -1,0 +1,47 @@
+<html>
+	<head>
+		<style>
+			body {
+				margin: 100px;
+			}
+			.box {
+				width: 300px;
+				margin: 100px;
+				height: 300px;
+				background: #3DCCC7;
+				/*
+				transition-duration: 2000ms;
+				transition-property: background, width;
+				transition-delay: 2s;
+				*/
+				transition: background 1000ms, width 1000ms;
+			}
+			.box:hover {
+				background: #FF6B6B;
+				width: 500px;
+			}
+			.one{
+				transition-timing-function: linear;
+			}
+			.two{
+				transition-timing-function: ease-in;
+			}
+			.three{
+				transition-timing-function: ease-out;
+			}
+			.four{
+				transition-timing-function: ease-in-out;
+			}
+		</style>
+	</head>
+	<body>
+		<div class='box one'>
+		</div>
+		<div class='box two'>
+		</div>
+		<div class='box three'>
+		</div>
+		<div class='box four'>
+		</div>
+	</body>
+</html>
